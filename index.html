@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>FIRST JQUERY USAGE</title>
+  </head>
+
+  <body>
+    <h1><font color="blue"><marquee>SIMPLE QUIZ</marquee></font></h1>
+
+    <br><br><br>
+<h2>
+    Q1.  In which direction does the sun rises? <br><br>
+    <input type="button" id="but1" value="ANSWER (SHOW/HIDE)"><br><br>
+    <div id="div1" style="display:none;">  Answer: East </div><br><br>
+
+
+    Q2.  How many zeros are there in one hundred thousand? <br><br>
+    <input type="button" id="but2" value="ANSWER (SHOW/HIDE)"><br><br>
+    <div id="div2" style="display:none;">  Answer: Five </div><br><br>
+
+
+    Q3. How many hours are there in two days? <br><br>
+    <input type="button" id="but3" value="ANSWER (SHOW/HIDE)"><br><br>
+    <div id="div3" style="display:none;"> Answer: 48 hours (24+24) </div><br><br>
+ </h2>   
+
+
+
+ <script type="text/JavaScript" src="jquery-3.5.1.js"></script>
+ <script type="text/JavaScript">
+
+$(document).ready(function(){
+
+    $("#but1").click(function(){
+        $("#div1").toggle(1000)
+        $("#div2").hide(1000)
+        $("#div3").hide(1000)
+    });
+
+    $("#but2").click(function(){
+        $("#div2").toggle(1000)
+        $("#div1").hide(1000)
+        $("#div3").hide(1000)
+    });
+
+    $("#but3").click(function(){
+        $("#div3").toggle(1000)
+        $("#div1").hide(1000)
+        $("#div2").hide(1000)
+    });
+
+
+});
+
+
+
+
+
+
+</script>
+
+
+
+  </body>
+</html>
